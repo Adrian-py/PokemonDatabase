@@ -53,7 +53,6 @@ export default function PokemonDetail({
     getPokemonDetail(pokemonName).then((res) => {
       setPokemonData(res.data);
       handlePokemonTypes(res.data.types);
-      console.log(res.data.stats);
     });
 
     // Retrieve pokemon evolutions
@@ -101,7 +100,7 @@ export default function PokemonDetail({
                     return (
                       <div className="pokemon-detail__type" key={type}>
                         <img
-                          src={`/images/PokemonType${type}.svg`}
+                          src={`${process.env.PUBLIC_URL}/images/PokemonType${type}.svg`}
                           alt="Pokemon Type"
                         />
                         <p>{type}</p>
@@ -118,7 +117,11 @@ export default function PokemonDetail({
 
             {pokemonData.stats.map((stat) => {
               return (
-                <StyledPokemonStat type={stat.stat.name} num={stat.base_stat}>
+                <StyledPokemonStat
+                  type={stat.stat.name}
+                  num={stat.base_stat}
+                  key={stat.stat.name}
+                >
                   <p>{stat.stat.name}</p>
 
                   <div className="stat">

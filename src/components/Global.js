@@ -18,7 +18,7 @@ const Global = createGlobalStyle`
 
     html{
         width: 100%;
-        background: url("/images/background.png");
+        background: url("${process.env.PUBLIC_URL}/images/background.png");
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
