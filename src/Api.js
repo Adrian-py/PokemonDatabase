@@ -11,7 +11,6 @@ export default class API {
   getPokemonEvolutionChain = async (pokemonID) => {
     return await axios
       .request({
-        method: "GET",
         url: `https://pokeapi.co/api/v2/pokemon-species/${pokemonID}`,
       })
       .then((res) => {
