@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/PokemonDatabase/static/js/main.6723e939.js",
+    "main.js": "/PokemonDatabase/static/js/main.6aa61bc0.js",
     "index.html": "/PokemonDatabase/index.html",
     "static/media/back-arrow.svg": "/PokemonDatabase/static/media/back-arrow.b270bf9ec9aa15d1aa24e78cf95ea9d4.svg",
     "static/media/right-arrow.svg": "/PokemonDatabase/static/media/right-arrow.b1e394fe51d6f7961705a9511f262bce.svg",
-    "main.6723e939.js.map": "/PokemonDatabase/static/js/main.6723e939.js.map"
+    "main.6aa61bc0.js.map": "/PokemonDatabase/static/js/main.6aa61bc0.js.map"
   },
   "entrypoints": [
-    "static/js/main.6723e939.js"
+    "static/js/main.6aa61bc0.js"
   ]
 }
