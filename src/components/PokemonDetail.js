@@ -102,7 +102,9 @@ export default function PokemonDetail({
                     return (
                       <div className="pokemon-detail__type" key={type}>
                         <img
-                          src={`${process.env.PUBLIC_URL}/images/PokemonType${type}.svg`}
+                          src={`${process.env.PUBLIC_URL}/images/PokemonType${
+                            type.charAt(0).toUpperCase() + type.slice(1)
+                          }.svg`}
                           alt="Pokemon Type"
                         />
                         <p>{type}</p>
