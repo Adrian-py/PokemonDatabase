@@ -67,8 +67,9 @@ function App() {
 
           <main>
             <Routes>
+              {console.log(process.env.PUBLIC_URL)}
               <Route
-                path="/"
+                path={process.env.PUBLIC_URL + "/"}
                 element={
                   <List
                     isRetrievingData={isRetrievingData}
@@ -78,7 +79,7 @@ function App() {
                 }
               />
               <Route
-                path="/pokemon/:pokemonName"
+                path={process.env.PUBLIC_URL + "/pokemon/:pokemonName"}
                 element={
                   <PokemonDetail
                     getPokemonDetail={api.getPokemonDetail}
