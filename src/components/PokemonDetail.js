@@ -71,7 +71,9 @@ export default function PokemonDetail({
 
   return (
     <>
-      <StyledBackButton onClick={() => navigatePage("/")}>
+      <StyledBackButton
+        onClick={() => navigatePage(process.env.PUBLIC_URL + "/")}
+      >
         <img src={backArrow} alt="" />
         <p>Back to list</p>
       </StyledBackButton>
@@ -145,7 +147,9 @@ export default function PokemonDetail({
                     <div
                       className="evolution__desc"
                       onClick={() => {
-                        navigatePage(`/pokemon/${evolution.name}`);
+                        navigatePage(
+                          `${process.env.PUBLIC_URL}/pokemon/${evolution.name}`
+                        );
                       }}
                     >
                       <img

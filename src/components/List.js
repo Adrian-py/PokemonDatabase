@@ -20,7 +20,11 @@ export default function List({
           return (
             <StyledPokemon
               key={uuidv4()}
-              onClick={() => navigatePage(`/pokemon/${pokemon.name}`)}
+              onClick={() =>
+                navigatePage(
+                  `${process.env.PUBLIC_URL}/pokemon/${pokemon.name}`
+                )
+              }
             >
               <img
                 src={pokemon.sprites.front_default}
