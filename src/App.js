@@ -67,7 +67,6 @@ function App() {
 
           <main>
             <Routes>
-              {console.log(process.env.PUBLIC_URL)}
               <Route
                 path={process.env.PUBLIC_URL + "/"}
                 element={
